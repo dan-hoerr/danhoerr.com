@@ -21,6 +21,7 @@ role :db,  domain, :primary => true # This is where Rails migrations will run
 namespace :deploy do
   task :start, :roles => :app do
     run "touch #{current_release}/tmp/restart.txt"
+    run "ln -sf #{shared_path}/database.yml #{latest_release}/config/database.yml"
   end
 
   task :stop, :roles => :app do
