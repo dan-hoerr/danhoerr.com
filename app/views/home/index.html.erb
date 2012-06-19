@@ -1,0 +1,66 @@
+<header>
+    <div class="wrapper">
+    	<h1>Hi, I'm <a href="/danhoer.json">Dan!</a></h1>
+    	<p>I'm a senior web developer (front-end mostly) for <a href="http://idfive.com/">idfive</a> with hobbies ranging from homebrewing beer to playing all manner of games. I don't like shrimp unless they're drowning in butter, but I love me a crab pickin'. One of my strongest passions is for learning new things.  </p>
+  	</div>
+</header>
+<div role="main">
+	<div class="wrapper">
+		<% @task_types.each_with_index do |type, index| %>
+			<div class="col<%= index+1 %> <%= type.typeclass %>">
+			<h2><%= type.name %></h2>
+				<ul>
+					<% @tasks.each do |task| %>
+						<% if task.kind.to_i == type.id %>
+							<li><%= task.name %></li>
+						<% end %>
+					<% end %>
+				</ul>
+			</div>
+		<% end %>
+	</div>
+</div>
+    <div class="sites">
+       <div class="wrapper">
+        <h2>Some sites I've had the pleasure to work on:</h2>
+        <ul class="portfolio">
+          <li>
+            <a href="http://idfive.com">
+            <%= image_tag "idfive.jpg" %>
+            </a>
+            <p class="details">Drupal, HTML/CSS, JQuery, Responsive Design</p>
+          </li>
+          <li>
+            <a href="http://usich.gov">
+            <%= image_tag "usich.jpg" %>
+            </a>
+            <p class="details">ExpressionEngine, HTML/CSS, JQuery</p>
+          </li>
+          <li>
+            <a href="http://regenxbio.com">
+           	<%= image_tag "regenx.jpg" %>
+            </a>
+            <p class="details">ExpressionEngine, HTML/CSS, JQuery</p>
+          </li>
+          <li>
+            <a href="http://ubalt.edu">
+           	<%= image_tag "ub.jpg" %>
+            </a>
+            <p class="details">Vendor Management, feature development, OU Campus (CMS)</p>
+          </li>
+          <li>
+            <a href="http://www.livablefutureblog.com/">
+            <%= image_tag "clf.jpg" %>
+            </a>
+            <p class="details">HTML/CSS, Wordpress, Custom Widget/Plugin Development</p>
+          </li>
+          <li>
+            <a href="http://carey.jhu.edu/more_info/index.cfm">
+           	<%= image_tag "jhu.jpg" %>
+            </a>
+            <p class="details">HTML/CSS, ColdFusion, AJAX, Third Party Data Collection Integration, Advanced Google Analytics</p>
+
+          </li>
+        </ul>
+      </div><!-- end wrapper -->
+    </div><!-- end sites -->

@@ -1,0 +1,18 @@
+<div class="wrapper">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Project name:</b>
+  <%= @portfolio.project_name %>
+</p>
+
+<p>
+  <b>Tasks:</b>
+  <%= @portfolio.tasks %>
+</p>
+
+
+<%= link_to 'Edit', edit_portfolio_path(@portfolio) %> |
+<%= link_to 'Back', portfolios_path %>
+</div>
+

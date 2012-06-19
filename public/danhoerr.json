@@ -1,0 +1,67 @@
+DanielHoerr = {
+
+	"email" : "dhoerr@gmail.com",
+	"phone" : "4108076800",
+	"address" : "221 W Lanvale St. Apt B  Baltimore, MD 21217",
+	"website" : "danhoerr.com",
+	"github" : "https://github.com/dan-hoerr",
+	"twitter" : "dan_hoerr",
+
+	"proficiencies": {
+
+		"HTML": "Valid, semantic, markup",
+		"CSS" : "Clean, organized, sometimes SASSy",
+		"Javascript" : "working towards jQuery independence and coffeescript",
+		"VCS" : "basic competency with both Git and SVN",
+
+		"ServerSide" : {
+			"PHP" : "primary serverside experience, a few projects in CodeIgniter",
+			"ColdFusion" : "when I have to",
+			"Ruby on Rails" : "current learning focus"
+		},
+
+		"ContentManagement" : {
+			"Wordpress" : "when it's the right tool",
+			"ExpressionEngine" : "my favoritest",
+			"Mura" : "see DanHoerr.proficiencies.ServerSide.ColdFusion",
+			"OmniUpdate" : "XSLT...",
+			"Drupal" : "another 'in process' item"
+		}
+	},
+
+	"job_history":{
+
+		"idfive" :{
+			"title" : "Senior Web Developer",
+			"years" : "2010 - present",
+			"what_i_actually_did" : "Led frontend production and integration efforts, oversaw production vendor selection and management, helped direct the company into contemporary production practices; responsive/mobile design"
+		},
+
+		"National Museum of American History" : {
+			"title" : "New Media Assistant",
+			"years" : "2008 - 2010",
+			"what_i_actually_did" : "Everything from content entry for online exhibitions to designing, producing and maintaining the email newsletter and touchscreen exhibition kiosks"
+		},
+
+		"Covington Creations" : {
+			"title" : "Chief Creative Officer (or somesuch thing)",
+			"years" : "2006 - 2008",
+			"what_i_actually_did" : "Design and development (mostly Joomla) for local businesses in the Doylestown, PA area"
+		}
+	},
+
+	"awards_memberships" : {
+
+		"American Home Brewers Association" : "Since 2010",
+		"Eagle Scout" : "2003"
+	},
+
+	"hobbies": {
+
+		"homebrewing" : "mmmmm beer.",
+		"craftbeer" : "see DanHoerr.hobbies.homebrewing",
+		"videogames" : "recently: Diablo3, Guild Wars 2 beta, Minecraft, Borderlands (again)",
+		"scuba" : "whenever we can"
+	}
+
+}
