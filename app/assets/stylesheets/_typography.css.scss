@@ -1,0 +1,96 @@
+@import "compass/typography";
+
+@include establish-baseline;
+
+html{
+	font-family: "museo-sans",sans-serif;
+	font-weight:100;
+	color:#666;
+	border-top:solid 3px grey;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+	margin-top:0;
+	font-family: "museo-slab", serif;
+}
+
+p{
+	&:first-child{
+		@include leader;
+	}
+	@include trailer;
+}
+
+header h1{
+	@include adjust-font-size-to($base-font-size * 3, $lines:2);
+	@include leader;
+}
+
+.col1, .col2, .col3{
+	@include trailer;
+	h2{
+		@include adjust-font-size-to($base-font-size * 1.5, $lines:2);
+		@include trailer(1);
+	}
+	ul{
+		padding:0;
+		margin:0;
+		list-style:none;
+		li{
+			@include adjust-font-size-to($base-font-size * 1, $lines:2);
+			border-bottom:1px solid #f2f2f2;
+		}
+	}
+}
+
+.col1{
+	h2{
+		border-bottom:solid 3px #45754d;
+	}
+}
+
+.col2{
+	h2{
+		border-bottom:solid 3px #cacb6b;
+	}
+}
+
+.col3{
+	h2{
+		border-bottom: solid 3px #6ba6cb;
+	}
+}
+
+a{
+	color:#6BA6CB;
+	text-decoration:none;
+	&:hover{
+		text-decoration:underline;
+	}
+	&:visited{
+		color:#6BA6CB;
+	}
+}
+
+.sites{
+	color:white;
+	background:#666;
+	h2{
+		@include adjust-font-size-to($base-font-size * 2, $lines:3);
+		border-bottom:1px solid #DDD;
+
+	}
+	ul{
+		padding:0;
+		margin:0;
+		list-style:none;
+		li{
+			border-bottom:none;
+		}
+	}
+	.details{
+		color:white;
+		background:rgba(0,0,0,0.75);
+	}
+}

@@ -1,0 +1,30 @@
+// ---------------------------------------------------------------------------
+// Imports
+
+@import "susy";
+
+
+
+// ---------------------------------------------------------------------------
+// Basic Grid
+
+$base-font-size       : 16px;
+$base-line-height     : 24px;
+
+$total-columns  : 4;
+$column-width   : 4*$base-font-size;
+$gutter-width   : $base-font-size;
+$grid-padding   : $gutter-width/2;
+
+$show-grid-backgrounds  : true;
+
+$relative-font-sizing : true;
+
+
+@mixin susy-grid-background {
+  @include grid-background($total-columns, $column-width, $gutter-width, $base-line-height, $grid-padding, $force-fluid: true);
+}
+
+.grid {
+	@include susy-grid-background;
+}

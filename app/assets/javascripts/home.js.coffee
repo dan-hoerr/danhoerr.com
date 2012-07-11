@@ -2,6 +2,7 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 $ ->
+	$('.jshide').hide();
 	$('.portfolio li').hover(
 		->
 			$(this).find('p.details').stop(true, true).fadeIn();

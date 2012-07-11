@@ -1,0 +1,53 @@
+@import "base";
+
+.wrapper {
+	@include container;
+	//@include susy-grid-background;
+}
+
+.col1, .col2, .col3{
+	@include span-columns(4,4);
+}
+
+.portfolio{
+	li{
+		@include span-columns(4 omega, 4);
+		position:relative;
+		margin-bottom:$gutter-width;
+
+		img{
+			width:100%;
+		}
+				
+		.details{
+			position:absolute;
+			bottom:0;
+			left:2.5%;
+		}
+	}		
+}
+
+
+@include at-breakpoint(30em 12){
+	.wrapper{
+		@include set-container-width;
+		//@include susy-grid-background;
+	}
+	.col1, .col2{
+		@include span-columns(4, 12);
+	}
+
+	.col3{
+		@include span-columns(4 omega, 12);
+	}
+
+	.portfolio{
+			li{
+				@include span-columns(4, 12);
+				&:nth-child(3n){
+					@include omega;
+				}
+			}
+
+	}
+}

@@ -1,25 +1,26 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.5'
-
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-gem 'mysql2'
-#gem 'sqlite3'
-
 gem 'json'
 
 # Gems used only for assets and not required
 # in production environments by default.
+group :development, :test do
+	gem 'sqlite3', '1.3.5'
+	#gem 'rspec-rails', '2.10.0'
+end
+
+group :production do
+	gem 'mysql2'
+end
+
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  #gem 'therubyracer', '>= 0.10.1'
-
-  gem 'uglifier', '>= 1.0.3'
+  gem 'sass-rails'
+  gem 'coffee-rails'
+  gem 'uglifier'
+  gem 'compass', '>= 0.13.alpha.0'
+  gem 'compass-rails', '>= 1.0.2'
+  gem 'susy'
 end
 
 gem 'jquery-rails'
