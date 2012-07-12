@@ -1,3 +1,5 @@
+require "bundler/capistrano"
+
 set :application, "danhoerr.com"
 set :domain, "danhoerr.com"
 set :repository, "https://github.com/dan-hoerr/danhoerr.com.git"

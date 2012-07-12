@@ -31,7 +31,7 @@
 @include at-breakpoint(30em 12){
 	.wrapper{
 		@include set-container-width;
-		//@include susy-grid-background;
+		@include susy-grid-background;
 	}
 	.col1, .col2{
 		@include span-columns(4, 12);
