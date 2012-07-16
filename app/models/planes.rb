@@ -11,7 +11,6 @@ class Planes < ActiveRecord::Base
 		html_doc = Nokogiri::HTML(open(url))
 
 		@cards = []
-		i = 10
 		#assemble details of each card to be added to the database
 		html_doc.css("tr.cardItem").each do |card|
 			temp_card = {}

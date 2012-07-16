@@ -8,7 +8,7 @@
 	<div class="wrapper">
 		<% @categories.each_with_index do |category, index| %>
 			<div class="col<%= index+1 %> <%= category.class %>">
-			<h2><%= category.name %></h2>
+			<h2><%=raw category.name %></h2>
 				<ul>
 					<% @tasks.each do |task| %>
 						<% if task.category_id.to_i == category.id %>
