@@ -6,12 +6,12 @@
 </header>
 <div role="main">
 	<div class="wrapper">
-		<% @task_types.each_with_index do |type, index| %>
-			<div class="col<%= index+1 %> <%= type.typeclass %>">
-			<h2><%= type.name %></h2>
+		<% @categories.each_with_index do |category, index| %>
+			<div class="col<%= index+1 %> <%= category.class %>">
+			<h2><%= category.name %></h2>
 				<ul>
 					<% @tasks.each do |task| %>
-						<% if task.kind.to_i == type.id %>
+						<% if task.category_id.to_i == category.id %>
 							<li><%= task.name %></li>
 						<% end %>
 					<% end %>
@@ -24,43 +24,12 @@
        <div class="wrapper">
         <h2>Some sites I've had the pleasure to work on:</h2>
         <ul class="portfolio">
+          <% @portfolios.each do |portfolio| %>
           <li>
-            <a href="http://idfive.com">
-            <%= image_tag "idfive.jpg" %>
-            </a>
-            <p class="details jshide">Drupal, HTML/CSS, JQuery, Responsive Design</p>
+            <%= link_to(image_tag(portfolio.image), portfolio.link) %>
+            <p class="details jshide"><%= portfolio.tasks %></p>
           </li>
-          <li>
-            <a href="http://usich.gov">
-            <%= image_tag "usich.jpg" %>
-            </a>
-            <p class="details jshide">ExpressionEngine, HTML/CSS, JQuery</p>
-          </li>
-          <li>
-            <a href="http://regenxbio.com">
-           	<%= image_tag "regenx.jpg" %>
-            </a>
-            <p class="details jshide">ExpressionEngine, HTML/CSS, JQuery</p>
-          </li>
-          <li>
-            <a href="http://ubalt.edu">
-           	<%= image_tag "ub.jpg" %>
-            </a>
-            <p class="details jshide">Vendor Management, feature development, OU Campus (CMS)</p>
-          </li>
-          <li>
-            <a href="http://www.livablefutureblog.com/">
-            <%= image_tag "clf.jpg" %>
-            </a>
-            <p class="details jshide">HTML/CSS, Wordpress, Custom Widget/Plugin Development</p>
-          </li>
-          <li>
-            <a href="http://carey.jhu.edu/more_info/index.cfm">
-           	<%= image_tag "jhu.jpg" %>
-            </a>
-            <p class="details jshide">HTML/CSS, ColdFusion, AJAX, Third Party Data Collection Integration, Advanced Google Analytics</p>
-
-          </li>
+          <% end %>
         </ul>
       </div><!-- end wrapper -->
     </div><!-- end sites -->

@@ -20,9 +20,18 @@
     <%= f.label :tasks %><br />
     <%= f.text_area :tasks %>
   </div>
+
   <div class="field">
-    <%= f.label :photo %>
-    <%= f.file_field :photo %>
+    <%= f.label :link %><br />
+    <%= f.text_field :link %>
+  </div>
+  <br />
+  <%= image_tag(@portfolio.image_url) if @portfolio.image? %>
+  <br /><br />
+  <div class="field">
+    <%= f.label :image%>
+    <%= f.file_field :image %>
+    <%= f.hidden_field :image_cache %>
   <div class="actions">
     <%= f.submit %>
   </div>

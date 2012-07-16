@@ -1,4 +1,6 @@
 Danhoerr2::Application.routes.draw do
+  resources :categories
+
   resources :users
   resources :portfolios
   resources :task_types

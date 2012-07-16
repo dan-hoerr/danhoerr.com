@@ -20,8 +20,8 @@
     <%= f.text_area :content %>
   </div>
   <div class="field">
-    <%= f.label :kind %><br />
-    <%= f.select(:kind, options_from_collection_for_select(TaskType.all, :id, :name))%>
+    <%= f.label :category_id %><br />
+    <%= f.select(:category_id, options_from_collection_for_select(Category.all, :id, :name))%>
   </div>
   <div class="actions">
     <%= f.submit %>

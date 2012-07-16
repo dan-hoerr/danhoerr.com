@@ -2,7 +2,7 @@
 class HomeController < ApplicationController
   def index
   	@tasks = Task.all
-  	@task_types = TaskType.all
+  	@categories = Category.all
   	@portfolios = Portfolio.all
   	
     respond_to do |format|

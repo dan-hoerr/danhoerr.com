@@ -11,7 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120716165645) do
+ActiveRecord::Schema.define(:version => 20120716224247) do
+
+  create_table "categories", :force => true do |t|
+    t.string   "name"
+    t.string   "cssclass"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "planes", :force => true do |t|
     t.datetime "created_at",   :null => false
@@ -26,26 +33,18 @@ ActiveRecord::Schema.define(:version => 20120716165645) do
   create_table "portfolios", :force => true do |t|
     t.string   "project_name"
     t.text     "tasks"
-    t.string   "photo_file_name"
-    t.string   "photo_content_type"
-    t.integer  "photo_file_size"
-    t.datetime "created_at",         :null => false
-    t.datetime "updated_at",         :null => false
-  end
-
-  create_table "task_types", :force => true do |t|
-    t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-    t.string   "typeclass"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+    t.string   "image"
+    t.string   "link"
   end
 
   create_table "tasks", :force => true do |t|
     t.string   "name"
     t.text     "content"
-    t.string   "kind"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.integer  "category_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "users", :force => true do |t|

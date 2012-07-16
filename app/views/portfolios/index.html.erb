@@ -5,6 +5,7 @@
   <tr>
     <th>Project name</th>
     <th>Tasks</th>
+    <th>Image</th>
     <th></th>
     <th></th>
     <th></th>
@@ -14,6 +15,7 @@
   <tr>
     <td><%= portfolio.project_name %></td>
     <td><%= portfolio.tasks %></td>
+    <td><%= image_tag portfolio.image_url(:thumb) if portfolio.image? %></td>
     <td><%= link_to 'Show', portfolio %></td>
     <td><%= link_to 'Edit', edit_portfolio_path(portfolio) %></td>
     <td><%= link_to 'Destroy', portfolio, :confirm => 'Are you sure?', :method => :delete %></td>

@@ -1,4 +1,4 @@
 class Task < ActiveRecord::Base
-  attr_accessible :content, :kind, :name
-  has_many :task_types
+  attr_accessible :content, :category_id, :name
+  belongs_to :category
 end
