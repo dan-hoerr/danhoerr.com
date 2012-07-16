@@ -5,6 +5,7 @@ set :domain, "danhoerr.com"
 set :repository, "https://github.com/dan-hoerr/danhoerr.com.git"
 set :use_sudo, false
 set :deploy_to, "/home/dhoerr/public/#{application}"
+set :shared_children, shared_children + %w{public/uploads}
 # set :branch, $1 if `git branch` =~ /\* (\S+)\s/m # from jake, copies current branch
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
