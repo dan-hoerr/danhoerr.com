@@ -8,6 +8,10 @@ Danhoerr2::Application.routes.draw do
   get "home/index"
   root :to => "home#index"
 
+  get "planechase/update" => "planechase#update_database"
+  get "planechase"  => "planechase#index"
+  get "planechase/random" => 'planechase#random', :as => :random
+
  get "login" => "home#login"
  get "logout" => "sessions#destroy"
 

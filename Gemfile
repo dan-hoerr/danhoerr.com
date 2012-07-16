@@ -2,12 +2,16 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.5'
 gem 'json'
+gem 'nokogiri'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :development, :test do
 	gem 'sqlite3', '1.3.5'
-	#gem 'rspec-rails', '2.10.0'
+	gem 'rspec'
+    gem 'rspec-rails'
+    gem 'autotest'
+    gem 'autotest-standalone'
 end
 
 group :production do
