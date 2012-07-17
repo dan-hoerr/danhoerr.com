@@ -1,5 +1,5 @@
 class Planes < ActiveRecord::Base
-  attr_accessible :title, :type, :text, :img, :multiverseid
+  attr_accessible :title, :cardtype, :text, :img, :multiverseid
 
   def self.random_record
   	ids = connection.select_all("SELECT id FROM planes")

@@ -30,6 +30,13 @@
 	}		
 }
 
+article.card-container{
+	@include span-columns(4 omega 4);
+	figure > img{
+		width:100%;
+	}
+}
+
 
 @include at-breakpoint(30em 12){
 	.wrapper{

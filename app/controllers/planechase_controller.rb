@@ -12,10 +12,10 @@ class PlanechaseController < ApplicationController
   	end #end index
 
   	def random
-  		@plane = Planes.random_record
+  	  @planes = Planes.all
+
   		respond_to do |format|
   			format.html
-  			format.json { render :json => @plane }
   		end
   	end
 

@@ -1,5 +1,23 @@
+<% content_for :head do %>
+	<%= javascript_include_tag "planechase/backbone" %>
+	<%= javascript_include_tag "planechase/planechase" %>
+	<script>
+	$(document).ready(function(){
+		var planechaseApp = new PlanechaseApp(<%=raw @planes.to_json%>);
+		planechaseApp.start();
+	});
+	</script>
+<% end %>
+
 <div class="wrapper">
-	<%= link_to(image_tag(@plane.img), random_url) %>
-	<h1><%= @plane.title %></h1>
-	<p><%=raw @plane.text %></p>
+	<div id="plane"></div>
 </div>
+
+<script id="cardTemplate" type="text/template">
+	<h2><%%= title %></h2>
+	<h3><%%= cardtype %></h3>
+	<figure>
+		<img src="<%%= img %>" alt="<%%= title %>" />
+		<figcaption><%%= text %></figcaption>
+	</figure>
+</script>

@@ -94,3 +94,20 @@ a{
 		background:rgba(0,0,0,0.75);
 	}
 }
+
+article.card-container{
+	h2{
+		@include leader;
+		text-align:center
+	}
+	h3{
+		text-align:center
+	}
+	.cardtextbox{
+		@include leader;
+	}
+	&.phenom{
+		background:red;
+		color:white;
+	}
+}
