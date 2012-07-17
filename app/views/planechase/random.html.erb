@@ -9,14 +9,26 @@
 <% end %>
 
 <div class="wrapper">
-	<div id="plane"></div>
+
+	<div id="plane">
+		<div class="alerts"></div>
+		<div class="controls">
+			<button type="button" id="shuffledeck" value="" name="shuffle">shuffle the deck</button>
+			<label for="show_x">Reveal X Cards:</label>
+			<input type="text" value="" id="xCards" />
+			<button type="button" id="revealX">Reveal</button>
+			<button type="button" id="rollDice">Roll Planar Die</button>
+		</div>
+	</div>
 </div>
 
 <script id="cardTemplate" type="text/template">
+<div class="pad_wrap">
 	<h2><%%= title %></h2>
 	<h3><%%= cardtype %></h3>
 	<figure>
 		<img src="<%%= img %>" alt="<%%= title %>" />
 		<figcaption><%%= text %></figcaption>
 	</figure>
+</div>
 </script>

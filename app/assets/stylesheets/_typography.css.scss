@@ -95,7 +95,63 @@ a{
 	}
 }
 
-article.card-container{
+body.phenom{
+background: -webkit-gradient(linear, 90deg, 90deg, color-stop(50%, transparent), color-stop(50%, #ddd), color-stop(100%, #ddd)), -webkit-gradient(linear, 82deg, 82deg, color-stop(50%, transparent), color-stop(50%, #eee), color-stop(100%, #eee)), -webkit-gradient(linear, 67deg, 67deg, color-stop(50%, transparent), color-stop(50%, #ddd), color-stop(100%, #ddd)), -webkit-gradient(linear, 52deg, 52deg, color-stop(50%, transparent), color-stop(50%, #eee), color-stop(100%, #eee)), -webkit-gradient(linear, 37deg, 37deg, color-stop(50%, transparent), color-stop(50%, #ddd), color-stop(100%, #ddd)), -webkit-gradient(linear, 22deg, 22deg, color-stop(50%, transparent), color-stop(50%, #eee), color-stop(100%, #eee)), -webkit-gradient(linear, 7deg, 7deg, color-stop(50%, transparent), color-stop(50%, #ddd), color-stop(100%, #ddd)), -webkit-gradient(linear, -8deg, -8deg, color-stop(50%, transparent), color-stop(50%, #eee), color-stop(100%, #eee)), -webkit-gradient(linear, -23deg, -23deg, color-stop(50%, transparent), color-stop(50%, #ddd), color-stop(100%, #ddd)), -webkit-gradient(linear, -38deg, -38deg, color-stop(50%, transparent), color-stop(50%, #eee), color-stop(100%, #eee)), -webkit-gradient(linear, -53deg, -53deg, color-stop(50%, transparent), color-stop(50%, #ddd), color-stop(100%, #ddd)), -webkit-gradient(linear, -68deg, -68deg, color-stop(50%, transparent), color-stop(50%, #eee), color-stop(100%, #eee)), -webkit-gradient(linear, -83deg, -83deg, color-stop(50%, transparent), color-stop(50%, #ddd), color-stop(100%, #ddd));
+  background: -webkit-linear-gradient(90deg, transparent 50%, #ddd 50%, #ddd), -webkit-linear-gradient(82deg, transparent 50%, #eee 50%, #eee), -webkit-linear-gradient(67deg, transparent 50%, #ddd 50%, #ddd), -webkit-linear-gradient(52deg, transparent 50%, #eee 50%, #eee), -webkit-linear-gradient(37deg, transparent 50%, #ddd 50%, #ddd), -webkit-linear-gradient(22deg, transparent 50%, #eee 50%, #eee), -webkit-linear-gradient(7deg, transparent 50%, #ddd 50%, #ddd), -webkit-linear-gradient(-8deg, transparent 50%, #eee 50%, #eee), -webkit-linear-gradient(-23deg, transparent 50%, #ddd 50%, #ddd), -webkit-linear-gradient(-38deg, transparent 50%, #eee 50%, #eee), -webkit-linear-gradient(-53deg, transparent 50%, #ddd 50%, #ddd), -webkit-linear-gradient(-68deg, transparent 50%, #eee 50%, #eee), -webkit-linear-gradient(-83deg, transparent 50%, #ddd 50%, #ddd);
+  background: -moz-linear-gradient(90deg, transparent 50%, #ddd 50%, #ddd), -moz-linear-gradient(82deg, transparent 50%, #eee 50%, #eee), -moz-linear-gradient(67deg, transparent 50%, #ddd 50%, #ddd), -moz-linear-gradient(52deg, transparent 50%, #eee 50%, #eee), -moz-linear-gradient(37deg, transparent 50%, #ddd 50%, #ddd), -moz-linear-gradient(22deg, transparent 50%, #eee 50%, #eee), -moz-linear-gradient(7deg, transparent 50%, #ddd 50%, #ddd), -moz-linear-gradient(-8deg, transparent 50%, #eee 50%, #eee), -moz-linear-gradient(-23deg, transparent 50%, #ddd 50%, #ddd), -moz-linear-gradient(-38deg, transparent 50%, #eee 50%, #eee), -moz-linear-gradient(-53deg, transparent 50%, #ddd 50%, #ddd), -moz-linear-gradient(-68deg, transparent 50%, #eee 50%, #eee), -moz-linear-gradient(-83deg, transparent 50%, #ddd 50%, #ddd);
+  background: -o-linear-gradient(90deg, transparent 50%, #ddd 50%, #ddd), -o-linear-gradient(82deg, transparent 50%, #eee 50%, #eee), -o-linear-gradient(67deg, transparent 50%, #ddd 50%, #ddd), -o-linear-gradient(52deg, transparent 50%, #eee 50%, #eee), -o-linear-gradient(37deg, transparent 50%, #ddd 50%, #ddd), -o-linear-gradient(22deg, transparent 50%, #eee 50%, #eee), -o-linear-gradient(7deg, transparent 50%, #ddd 50%, #ddd), -o-linear-gradient(-8deg, transparent 50%, #eee 50%, #eee), -o-linear-gradient(-23deg, transparent 50%, #ddd 50%, #ddd), -o-linear-gradient(-38deg, transparent 50%, #eee 50%, #eee), -o-linear-gradient(-53deg, transparent 50%, #ddd 50%, #ddd), -o-linear-gradient(-68deg, transparent 50%, #eee 50%, #eee), -o-linear-gradient(-83deg, transparent 50%, #ddd 50%, #ddd);
+  background: linear-gradient(90deg, transparent 50%, #ddd 50%, #ddd), linear-gradient(82deg, transparent 50%, #eee 50%, #eee), linear-gradient(67deg, transparent 50%, #ddd 50%, #ddd), linear-gradient(52deg, transparent 50%, #eee 50%, #eee), linear-gradient(37deg, transparent 50%, #ddd 50%, #ddd), linear-gradient(22deg, transparent 50%, #eee 50%, #eee), linear-gradient(7deg, transparent 50%, #ddd 50%, #ddd), linear-gradient(-8deg, transparent 50%, #eee 50%, #eee), linear-gradient(-23deg, transparent 50%, #ddd 50%, #ddd), linear-gradient(-38deg, transparent 50%, #eee 50%, #eee), linear-gradient(-53deg, transparent 50%, #ddd 50%, #ddd), linear-gradient(-68deg, transparent 50%, #eee 50%, #eee), linear-gradient(-83deg, transparent 50%, #ddd 50%, #ddd);
+  background-position: center -100%;
+  background-color: #eee;
+  background-size: 100% 200%;
+  min-height: 100%;
+}
+
+button {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #F5F5F5;
+    background-image: -moz-linear-gradient(center top , #FFFFFF, #E6E6E6);
+    background-repeat: repeat-x;
+    border-color: #E6E6E6 #E6E6E6 #B3B3B3;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 0;
+    padding: 4px 10px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+}
+
+#plane{
+	.alerts{
+	text-align:center;
+		p{
+			padding:1em 0;
+
+		}
+		.notice{
+			background-color: #DFF0D8;
+    		border-color: #D6E9C6;
+    		color: #468847;
+		}
+		.warning, .error{
+			background-color: #F2DEDE;
+    		border-color: #EED3D7;
+    		color: #B94A48;
+		}
+	}
+	article.card-container{
 	h2{
 		@include leader;
 		text-align:center
@@ -109,5 +165,13 @@ article.card-container{
 	&.phenom{
 		background:red;
 		color:white;
+	}
+}
+
+	.controls{
+		@include leader;
+		padding:1em 0;
+		text-align:center;
+		border:1px solid grey;
 	}
 }
