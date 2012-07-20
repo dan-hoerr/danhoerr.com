@@ -1,0 +1,141 @@
+@import compass/typography
+
++establish-baseline
+
+html
+  font-family: "museo-sans",sans-serif
+  font-weight: 100
+  color: #666
+  border-top: solid 3px grey
+
+h1, h2, h3, h4, h5, h6
+  margin-top: 0
+  font-family: "museo-slab", serif
+  font-weight: normal
+
+p
+  &:first-child
+    +leader
+  +trailer
+
+header h1
+  +adjust-font-size-to($base-font-size * 3, $lines: 2)
+  +leader
+
+.col1, .col2, .col3
+  +trailer
+  h2
+    +leader
+    +adjust-font-size-to($base-font-size * 1.5, $lines: 2)
+    +trailer(1)
+  ul
+    padding: 0
+    margin: 0
+    list-style: none
+    li
+      +adjust-font-size-to($base-font-size * 1, $lines: 2)
+      border-bottom: 1px solid #f2f2f2
+
+.col1
+  h2
+    border-bottom: solid 3px #45754d
+
+.col2
+  h2
+    border-bottom: solid 3px #cacb6b
+
+.col3
+  h2
+    border-bottom: solid 3px #6ba6cb
+
+a
+  color: #6BA6CB
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+  &:visited
+    color: #6BA6CB
+
+.sites
+  color: white
+  background: #666
+  +leader
+  padding-top: 2em
+  h2
+    +adjust-font-size-to($base-font-size * 2, $lines: 3)
+    border-bottom: 1px solid #DDD
+  ul
+    padding: 0
+    margin: 0
+    list-style: none
+    li
+      border-bottom: none
+  .details
+    color: white
+    background: rgba(0, 0, 0, 0.75)
+
+body.phenom
+  background: -webkit-gradient(linear, 90deg, 90deg, color-stop(50%, transparent), color-stop(50%, #dddddd), color-stop(100%, #dddddd)), -webkit-gradient(linear, 82deg, 82deg, color-stop(50%, transparent), color-stop(50%, #eeeeee), color-stop(100%, #eeeeee)), -webkit-gradient(linear, 67deg, 67deg, color-stop(50%, transparent), color-stop(50%, #dddddd), color-stop(100%, #dddddd)), -webkit-gradient(linear, 52deg, 52deg, color-stop(50%, transparent), color-stop(50%, #eeeeee), color-stop(100%, #eeeeee)), -webkit-gradient(linear, 37deg, 37deg, color-stop(50%, transparent), color-stop(50%, #dddddd), color-stop(100%, #dddddd)), -webkit-gradient(linear, 22deg, 22deg, color-stop(50%, transparent), color-stop(50%, #eeeeee), color-stop(100%, #eeeeee)), -webkit-gradient(linear, 7deg, 7deg, color-stop(50%, transparent), color-stop(50%, #dddddd), color-stop(100%, #dddddd)), -webkit-gradient(linear, -8deg, -8deg, color-stop(50%, transparent), color-stop(50%, #eeeeee), color-stop(100%, #eeeeee)), -webkit-gradient(linear, -23deg, -23deg, color-stop(50%, transparent), color-stop(50%, #dddddd), color-stop(100%, #dddddd)), -webkit-gradient(linear, -38deg, -38deg, color-stop(50%, transparent), color-stop(50%, #eeeeee), color-stop(100%, #eeeeee)), -webkit-gradient(linear, -53deg, -53deg, color-stop(50%, transparent), color-stop(50%, #dddddd), color-stop(100%, #dddddd)), -webkit-gradient(linear, -68deg, -68deg, color-stop(50%, transparent), color-stop(50%, #eeeeee), color-stop(100%, #eeeeee)), -webkit-gradient(linear, -83deg, -83deg, color-stop(50%, transparent), color-stop(50%, #dddddd), color-stop(100%, #dddddd))
+  background: -webkit-linear-gradient(90deg, transparent 50%, #dddddd 50%, #dddddd), -webkit-linear-gradient(82deg, transparent 50%, #eeeeee 50%, #eeeeee), -webkit-linear-gradient(67deg, transparent 50%, #dddddd 50%, #dddddd), -webkit-linear-gradient(52deg, transparent 50%, #eeeeee 50%, #eeeeee), -webkit-linear-gradient(37deg, transparent 50%, #dddddd 50%, #dddddd), -webkit-linear-gradient(22deg, transparent 50%, #eeeeee 50%, #eeeeee), -webkit-linear-gradient(7deg, transparent 50%, #dddddd 50%, #dddddd), -webkit-linear-gradient(-8deg, transparent 50%, #eeeeee 50%, #eeeeee), -webkit-linear-gradient(-23deg, transparent 50%, #dddddd 50%, #dddddd), -webkit-linear-gradient(-38deg, transparent 50%, #eeeeee 50%, #eeeeee), -webkit-linear-gradient(-53deg, transparent 50%, #dddddd 50%, #dddddd), -webkit-linear-gradient(-68deg, transparent 50%, #eeeeee 50%, #eeeeee), -webkit-linear-gradient(-83deg, transparent 50%, #dddddd 50%, #dddddd)
+  background: -moz-linear-gradient(90deg, transparent 50%, #dddddd 50%, #dddddd), -moz-linear-gradient(82deg, transparent 50%, #eeeeee 50%, #eeeeee), -moz-linear-gradient(67deg, transparent 50%, #dddddd 50%, #dddddd), -moz-linear-gradient(52deg, transparent 50%, #eeeeee 50%, #eeeeee), -moz-linear-gradient(37deg, transparent 50%, #dddddd 50%, #dddddd), -moz-linear-gradient(22deg, transparent 50%, #eeeeee 50%, #eeeeee), -moz-linear-gradient(7deg, transparent 50%, #dddddd 50%, #dddddd), -moz-linear-gradient(-8deg, transparent 50%, #eeeeee 50%, #eeeeee), -moz-linear-gradient(-23deg, transparent 50%, #dddddd 50%, #dddddd), -moz-linear-gradient(-38deg, transparent 50%, #eeeeee 50%, #eeeeee), -moz-linear-gradient(-53deg, transparent 50%, #dddddd 50%, #dddddd), -moz-linear-gradient(-68deg, transparent 50%, #eeeeee 50%, #eeeeee), -moz-linear-gradient(-83deg, transparent 50%, #dddddd 50%, #dddddd)
+  background: -o-linear-gradient(90deg, transparent 50%, #dddddd 50%, #dddddd), -o-linear-gradient(82deg, transparent 50%, #eeeeee 50%, #eeeeee), -o-linear-gradient(67deg, transparent 50%, #dddddd 50%, #dddddd), -o-linear-gradient(52deg, transparent 50%, #eeeeee 50%, #eeeeee), -o-linear-gradient(37deg, transparent 50%, #dddddd 50%, #dddddd), -o-linear-gradient(22deg, transparent 50%, #eeeeee 50%, #eeeeee), -o-linear-gradient(7deg, transparent 50%, #dddddd 50%, #dddddd), -o-linear-gradient(-8deg, transparent 50%, #eeeeee 50%, #eeeeee), -o-linear-gradient(-23deg, transparent 50%, #dddddd 50%, #dddddd), -o-linear-gradient(-38deg, transparent 50%, #eeeeee 50%, #eeeeee), -o-linear-gradient(-53deg, transparent 50%, #dddddd 50%, #dddddd), -o-linear-gradient(-68deg, transparent 50%, #eeeeee 50%, #eeeeee), -o-linear-gradient(-83deg, transparent 50%, #dddddd 50%, #dddddd)
+  background: linear-gradient(90deg, transparent 50%, #dddddd 50%, #dddddd), linear-gradient(82deg, transparent 50%, #eeeeee 50%, #eeeeee), linear-gradient(67deg, transparent 50%, #dddddd 50%, #dddddd), linear-gradient(52deg, transparent 50%, #eeeeee 50%, #eeeeee), linear-gradient(37deg, transparent 50%, #dddddd 50%, #dddddd), linear-gradient(22deg, transparent 50%, #eeeeee 50%, #eeeeee), linear-gradient(7deg, transparent 50%, #dddddd 50%, #dddddd), linear-gradient(-8deg, transparent 50%, #eeeeee 50%, #eeeeee), linear-gradient(-23deg, transparent 50%, #dddddd 50%, #dddddd), linear-gradient(-38deg, transparent 50%, #eeeeee 50%, #eeeeee), linear-gradient(-53deg, transparent 50%, #dddddd 50%, #dddddd), linear-gradient(-68deg, transparent 50%, #eeeeee 50%, #eeeeee), linear-gradient(-83deg, transparent 50%, #dddddd 50%, #dddddd)
+  background-position: center -100%
+  background-color: #eee
+  background-size: 100% 200%
+  min-height: 100%
+
+button
+  -moz-border-bottom-colors: none
+  -moz-border-image: none
+  -moz-border-left-colors: none
+  -moz-border-right-colors: none
+  -moz-border-top-colors: none
+  background-color: #F5F5F5
+  background-image: -moz-linear-gradient(center top, white, #e6e6e6)
+  background-repeat: repeat-x
+  border-color: #E6E6E6 #E6E6E6 #B3B3B3
+  border-radius: 4px 4px 4px 4px
+  border-style: solid
+  border-width: 1px
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05)
+  color: #333333
+  cursor: pointer
+  display: inline-block
+  font-size: 13px
+  line-height: 18px
+  margin-bottom: 0
+  padding: 4px 10px
+  text-align: center
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75)
+  vertical-align: middle
+
+#plane
+  .alerts
+    text-align: center
+    p
+      padding: 1em 0
+    .notice
+      background-color: #DFF0D8
+      border-color: #D6E9C6
+      color: #468847
+    .warning, .error
+      background-color: #F2DEDE
+      border-color: #EED3D7
+      color: #B94A48
+  article.card-container
+    h2
+      +leader
+      text-align: center
+    h3
+      text-align: center
+    .cardtextbox
+      +leader
+    &.phenom
+      background: red
+      color: white
+  .controls
+    +leader
+    padding: 1em 0
+    text-align: center
+    border: 1px solid grey
