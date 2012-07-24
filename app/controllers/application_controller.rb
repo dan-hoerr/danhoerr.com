@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
 
   def authorize
     # check to make sure the user is real and that they have editing permissions (1)
-  	unless User.find_by_id(session[:user_id] && session[:user_role] === 1)
+  	unless User.find_by_id(session[:user_id] && session[:user_role] > 5)
   		flash[:notice] = "Please Log In"
   		session[:request_uri] = request.url
   		redirect_to "/login"
