@@ -18,7 +18,7 @@ p
     +leader
   +trailer
 
-header h1
+h1
   +adjust-font-size-to($base-font-size * 3, $lines: 2)
   +leader
 
@@ -73,6 +73,17 @@ a
   .details
     color: white
     background: rgba(0, 0, 0, 0.75)
+
+.alert
+  +leader
+  &.alert-notice
+    background-color: #FCF8E3
+    border: 1px solid #FBEED5
+    border-radius: 4px 4px 4px 4px
+    color: #C09853
+    margin-bottom: 18px
+    padding: 8px 35px 8px 14px
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5)
 
 body.phenom
   background: -webkit-gradient(linear, 90deg, 90deg, color-stop(50%, transparent), color-stop(50%, #dddddd), color-stop(100%, #dddddd)), -webkit-gradient(linear, 82deg, 82deg, color-stop(50%, transparent), color-stop(50%, #eeeeee), color-stop(100%, #eeeeee)), -webkit-gradient(linear, 67deg, 67deg, color-stop(50%, transparent), color-stop(50%, #dddddd), color-stop(100%, #dddddd)), -webkit-gradient(linear, 52deg, 52deg, color-stop(50%, transparent), color-stop(50%, #eeeeee), color-stop(100%, #eeeeee)), -webkit-gradient(linear, 37deg, 37deg, color-stop(50%, transparent), color-stop(50%, #dddddd), color-stop(100%, #dddddd)), -webkit-gradient(linear, 22deg, 22deg, color-stop(50%, transparent), color-stop(50%, #eeeeee), color-stop(100%, #eeeeee)), -webkit-gradient(linear, 7deg, 7deg, color-stop(50%, transparent), color-stop(50%, #dddddd), color-stop(100%, #dddddd)), -webkit-gradient(linear, -8deg, -8deg, color-stop(50%, transparent), color-stop(50%, #eeeeee), color-stop(100%, #eeeeee)), -webkit-gradient(linear, -23deg, -23deg, color-stop(50%, transparent), color-stop(50%, #dddddd), color-stop(100%, #dddddd)), -webkit-gradient(linear, -38deg, -38deg, color-stop(50%, transparent), color-stop(50%, #eeeeee), color-stop(100%, #eeeeee)), -webkit-gradient(linear, -53deg, -53deg, color-stop(50%, transparent), color-stop(50%, #dddddd), color-stop(100%, #dddddd)), -webkit-gradient(linear, -68deg, -68deg, color-stop(50%, transparent), color-stop(50%, #eeeeee), color-stop(100%, #eeeeee)), -webkit-gradient(linear, -83deg, -83deg, color-stop(50%, transparent), color-stop(50%, #dddddd), color-stop(100%, #dddddd))

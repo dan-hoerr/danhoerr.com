@@ -18,18 +18,27 @@
   <%= yield :head %>
 </head>
 <body>
-<% unless session[:user_id].nil? %>
+<% unless session[:user_role].nil? %>
   <div class="wrapper">
-  
-  <nav id="admin_nav">
-    <a href="/">Home</a>
-    <a href="/tasks">Tasks</a>
-    <a href="/categories">Categories</a>
-    <a href="/portfolios">Portfolio</a>
-    <a href="/users">Users</a>
-    <a href="/logout" class="logout">logout</a>
-  </nav>
+    <nav id="admin_nav">
+      <a href="/secret_portfolio">Dan's Secret Portfolio</a>
+
+    <% if session[:user_role] === 1 %>
+      <span>&nbsp; &nbsp;</span>
+      <a href="/">Home</a>
+      <a href="/tasks">Tasks</a>
+      <a href="/categories">Categories</a>
+      <a href="/portfolios">Portfolio</a>
+      <a href="/users">Users</a>
+    <% end %>
+      <a href="/logout" class="logout">logout</a>
+    </nav>
 </div>
+<% end %>
+<% flash.each do |key, value| %>
+  <div class="wrapper">
+    <div class="alert alert-<%= key %>"><%= value %></div>
+  </div>
 <% end %>
 <%= yield %>
 </body>
