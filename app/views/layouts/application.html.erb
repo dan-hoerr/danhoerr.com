@@ -23,7 +23,7 @@
     <nav id="admin_nav">
       <a href="/secret_portfolio">Dan's Secret Portfolio</a>
 
-    <% if session[:user_role] === 1 %>
+    <% if session[:user_role] > 5 %>
       <span>&nbsp; &nbsp;</span>
       <a href="/">Home</a>
       <a href="/tasks">Tasks</a>
