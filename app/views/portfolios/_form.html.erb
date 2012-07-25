@@ -20,6 +20,10 @@
     <%= f.label :tasks %><br />
     <%= f.text_area :tasks %>
   </div>
+    <div class="field">
+    <%= f.label :public %><br />
+    <%= f.select :public, %w(true false) %>
+  </div>
 
   <div class="field">
     <%= f.label :link %><br />

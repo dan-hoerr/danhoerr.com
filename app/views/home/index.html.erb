@@ -25,6 +25,7 @@
         <h2>Some sites I've had the pleasure to work on:</h2>
         <ul class="portfolio">
           <% @portfolios.each do |portfolio| %>
+            <% next if portfolio.public == false && session[:user_role].nil? %>
           <li>
             <%= link_to(image_tag(portfolio.image), portfolio.link) %>
             <p class="details jshide"><%= portfolio.tasks %></p>
