@@ -21,8 +21,6 @@
 <% unless session[:user_role].nil? %>
   <div class="wrapper">
     <nav id="admin_nav">
-      <a href="/secret_portfolio">Dan's Secret Portfolio</a>
-
     <% if session[:user_role] > 5 %>
       <span>&nbsp; &nbsp;</span>
       <a href="/">Home</a>
