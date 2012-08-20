@@ -1,6 +1,6 @@
 
 class PortfoliosController < ApplicationController
-  before_filter :authorize, :only => [:show, :new, :edit, :create, :update, :destroy]
+  before_filter :authorize, :only => [:index, :show, :new, :edit, :create, :update, :destroy]
   # GET /portfolios
   # GET /portfolios.json
   def index
