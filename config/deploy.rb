@@ -4,6 +4,7 @@ set :application, "danhoerr.com"
 set :domain, "danhoerr.com"
 set :repository, "https://github.com/dan-hoerr/danhoerr.com.git"
 set :use_sudo, false
+set :user, "dhoerr"  # The server's user for deploys
 set :deploy_to, "/home/dhoerr/public/#{application}"
 set :shared_children, shared_children + %w{public/uploads}
 # set :branch, $1 if `git branch` =~ /\* (\S+)\s/m # from jake, copies current branch
