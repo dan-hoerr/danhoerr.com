@@ -11,9 +11,7 @@ gem 'carrierwave'
 group :development, :test do
 	gem 'sqlite3', '1.3.5'
 	gem 'rspec'
-    gem 'rspec-rails'
-    gem 'autotest'
-    gem 'autotest-standalone'
+  gem 'rspec-rails'
 end
 
 group :production do
