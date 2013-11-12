@@ -2,40 +2,47 @@ DanHoerr = {
 
 	"email" : "dhoerr@gmail.com",
 	"phone" : 4108076800,
-	"address" : "221 W Lanvale St. Apt B  Baltimore, MD 21217",
+	"address" : "314 McRae St Wilmington NC 28401",
 	"website" : "danhoerr.com",
 	"github" : "https://github.com/dan-hoerr",
-	"twitter" : "@dan_hoerr",
 
-	"proficiencies": {
+	"proficiencies" : {
 
-		"HTML": "Valid and semantic, splashes of 5",
-		"CSS" : "Clean and organized, sometimes SASSy",
-		"Javascript" : "working towards jQuery independence, coffeescript, and understanding of backbone and similar frameworks",
+		"HTML": "Valid and semantic, splashes of 5, HAML, ERB",
+		"CSS" : "Clean and organized, mostly SASSy",
+		"Javascript" : "Coffeescript, jQuery when it's necessary",
 		"VCS" : "basic competency with both Git and SVN",
 
 		"ServerSide" : {
-			"PHP" : "primary serverside experience, a few projects in CodeIgniter",
+			"Ruby" : "Language of choice, multiple live sites running Rails or Sinatra",
+			"PHP" : "I don't mind working in PHP and have experience with CodeIgniter and other frameworks",
 			"ColdFusion" : "when I have to",
-			"Ruby on Rails" : "current learning focus; platform for danhoerr.com",
+			"Python" : "something I'm still learning, but I love syntactically significant whitespace over a neverending sea of 'end end end end end' in other languages",
 			"linux" : "comfortable setting up and maintaining non-critical servers via CLI",
 			"windows server" : "comfortable maintaining established server"
 		},
 
 		"ContentManagement" : {
+			"Rails" : "ActiveAdmin, or custom backend",
 			"Wordpress" : "when it's the right tool",
-			"ExpressionEngine" : "my favoritest",
+			"ExpressionEngine" : "Gee I wish we had a better alternative CMS &trade;",
 			"Mura" : "see DanHoerr.proficiencies.ServerSide.ColdFusion",
-			"OmniUpdate" : "XSLT...",
-			"Drupal" : "another 'in process' item"
+			"OmniUpdate" : "XSLT..."
 		}
 	},
 
 	"job_history":{
 
-		"idfive" :{
+		"AppDirect" : {
+
+			"title" : "Web Developer",
+			"years" : "2012 - present",
+			"what_i_actually_did" : "Developed, planned, and maintained ExpressionEngine, Rails, Middleman, and other sites for AppDirect's Design and Communications department; a leading cloud service marketplace utilized by world-class telecoms and other service providers."
+		},
+
+		"idfive" : {
 			"title" : "Senior Web Developer",
-			"years" : "2010 - present",
+			"years" : "2010 - 2012",
 			"what_i_actually_did" : "Led frontend production and integration efforts, oversaw production vendor selection and management, responsive/mobile design, occasional wireframing, analytics analysis"
 		},
 
@@ -53,7 +60,8 @@ DanHoerr = {
 	},
 
 	"education" :{
-		"College" : "BFA in Interactive Media from Maryland Institute College of Art (class of 2007)"
+		"College" : "BFA in Interactive Media from Maryland Institute College of Art (class of 2007)",
+		"Highschool" : "North Penn Senior High class of 2003 (Lansdale, PA)"
 	},
 
 	"awards_memberships" : {
@@ -66,8 +74,9 @@ DanHoerr = {
 
 		"homebrewing" : "mmmmm beer.",
 		"craftbeer" : "see DanHoerr.hobbies.homebrewing",
-		"videogames" : "recently: Diablo3, Guild Wars 2 beta, Minecraft, Borderlands (again)",
-		"scuba diving" : "whenever we can"
+		"videogames" : "recently: Fez, Guild Wars 2, Mark of the Ninja, etc.",
+		"scuba diving" : "Anytime I get the chance.",
+		"music" : "Vinyl... because life has surface noise. Also because it's incredible to hold a 12\" version of the album art. "
 	}
 
 }
